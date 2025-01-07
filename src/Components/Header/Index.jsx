@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import Button from "@mui/material/Button";
 import CountryDropdown from "../CountryDropdown";
-import { IoIosSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
-
+import SearchBox from './SearchBox'
+import Navigation from "./Navigation";
 const Header = () => {
   return (
     <>
@@ -29,35 +29,29 @@ const Header = () => {
               </div>
 
               <div className="col-sm-10 d-flex align-items-center part2">
+
                 <CountryDropdown />
+                <SearchBox />
 
-                {/* Header Search Start Here */}
-                <div className='headerSearch ml-3 mr-3'>
-                  <input type='text' placeholder='Search for poroducts...' />
-                  <Button>
-                    <IoIosSearch />
-                  </Button>
-                </div>
-                {/* Header Search Start Here */}
-
-
-            <div className='part3 d-flex align-items-center ml-auto'>
-                <Button className="circle mr-3"><FiUser/></Button>
-                <div className="ml-auto cartTab d-flex align-items-center">
-                    <span className= "price">$3.29</span>
+                <div className='part3 d-flex align-items-center ml-auto'>
+                  <Button className="circle mr-3"><FiUser /></Button>
+                  <div className="ml-auto cartTab d-flex align-items-center">
+                    <span className="price">$3.29</span>
                     <div className="position-relative ml-2">
-                    <Button className="circle"><IoBagOutline/></Button>
-                    <span className="count d-flex align-items-center
+                      <Button className="circle"><IoBagOutline /></Button>
+                      <span className="count d-flex align-items-center
                     justify-content-center">1</span>
 
                     </div>
 
+                  </div>
                 </div>
-            </div>
               </div>
             </div>
           </div>
         </header>
+           <Navigation/>
+       
       </div>
     </>
   );
