@@ -8,8 +8,9 @@
 }
 
 body {
-  font-family: "Lato", sans-serif; font-size: 14px; color:rgba(0,0,0,0.8)
-}
+  font-family: "Lato", sans-serif; font-size: 14px; color:rgba(0,0,0,0.8); overflow-x:
+  hidden;}
+
 .bg-blue{background: #233a95;}
 
 @media (min-width: 1300px) {
@@ -142,8 +143,8 @@ background: #fff;opacity: 0; visibility: hidden; transition: all 0.2s ease-in-ou
 100;}
 nav .navPart2 ul li .submenu a{display: block; width: 100%; }
 nav .navPart2 ul li .submenu a button{ width: 100%; justify-content: flex-start !important;
-border-radius: 0px !important; text-transform: capitalize !important; font-weight: 600 
-!important;}
+border-radius: 0px !important; text-transform: capitalize !important; font-weight: 500 
+!important; color: #373737 !important}
 
 nav .navPart2 ul li .submenu a button:hover{background: #f1f1f1 !important;}
 
@@ -151,6 +152,18 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top: 100%;}
 
 .homeBannerSection{position: relative; overflow: hidden;}
 .homeBannerSection *{outline: none !important;}
+
+.swiper-button-next{right: 2px !important; position: absolute; top:45%; z-index:100; display: 
+  flex; align-items: center; justify-content: center; width: 45px !important; height: 45px 
+  !important; background: #fff; border-radius: 100%; font-family: FontAwesome !important;
+font-weight: bold; box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%)
+!important }
+.swiper-button-prev{left: 2% !important;
+position: absolute; top:45%; z-index: 100; display: flex; align-items: center;
+justify-content: center; width: 45px !important; height: 45px !important; background: #fff;}
+
+
+
 .homeBannerSection .slick-arrow{position: absolute; top: 45%; z-index: 100; display: flex;
 align-items: center; justify-content: center; width: 40px !important; height: 40px !important;
 background: #fff; border-radius: 100%;  font-family: FontAwesome !important; font-weight: bold;
@@ -167,13 +180,26 @@ box-shadow: 0 1px 3px rgb (0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;}
 .slick-next::before{content: "\f105" !important;}
 
 .slick-prev::before{content: "\f104" !important;}
+
+.swiper-button-prev{left: 2% !important;
+position: absolute; top: 45%; z-index: 100; display: flex; align-items: center;
+justify-content: center; width: 45px !important;height: 45px !important; background: #fff;
+ border-radius: 100%; font-family: FontAwesome !important; font-weight: bold; box-shadow: 0
+ 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #000 !important;
+  opacity: 0.8;
+  font-size: 17px !important;
+}
+
 .homeBannerSection {cursor: pointer;}
 
 
 .homeProducts{padding: 25px 0px; width: 100%;}
 .homeProducts .banner{width: 100%; border-radius: 7px; overflow: hidden;}
 
-.productRow .hd{font-size: 20px; font-weight: 600;}
+.hd{font-size: 20px; font-weight: 600; text-transform: uppercase;}
 
 .viewAllBtn{padding: 5px 25px !important; background: #fff; border: 1px solid rgba(0,0,0,0.1)
 !important; border-radius: 30px !important; color:#414141 !important; font-weight: 600;
@@ -218,6 +244,30 @@ rgba(0,0,0,0.1) !important; border-radius: 50% !important; background: #fff !imp
 .product_row .swiper-slide:last-child .productItem{ border: 1px solid rgba(0,0,0,0.1)
 !important;}
 
-.swiper{padding-right: 1px !important;}
+.product_row .swiper-button-prev{left: 0px !important; }
+.product_row .swiper-button-next{right: 0px !important; }
 
-.badge-primary{background: #2bbef9 !important;}
+.swiper{padding-right: 2px !important;}
+
+.badge-primary{background: #2bbef9 !important;} 
+
+.homeCat{padding: 35px 0px;}
+.homeCat .swiper{overflow: inherit !important;}
+.homeCat .swiper .item{padding: 15px; width: 100%; height: auto; border-radius: 10px;}
+.homeCat .swiper .item img{width: 80%;}
+
+.homeCat .swiper-button-prev, .swiper-button-next{top: -30px !important; width: 30px
+  !important; height: 30px !important;}
+  .homeCat .swiper-button-prev{right: 68px !important; left: inherit !important;  }
+
+  .homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{font-size: 12px 
+  !important;}  
+
+
+  .productRow2{flex-wrap: wrap; gap: 10px;}
+  .productRow2 .productItem{width: 24%; overflow: hidden; border-right: 1px solid rgba(0,0,0,0.
+    1) !important;}
+
+   .bannerSec{gap: 15px;}
+
+   .sticky{position: sticky; top:10px; z-index:100;}
