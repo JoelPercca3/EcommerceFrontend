@@ -143,7 +143,7 @@ const Home = () => {
         </div>
       </section>
 
-
+          
       <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -174,7 +174,7 @@ const Home = () => {
       </section>
 
       
-      <br/>  <br/>  <br/>  <br/>  <br/>  <br/>
+    
 
     </>
   );
